@@ -3,52 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chapter Title</title>
+  <title>Chapter Template</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      min-height: 100vh;
       background: #f4f4f4;
-      color: #333;
     }
-    header {
+
+    aside {
+      width: 250px;
       background: #2c3e50;
       color: white;
-      padding: 1rem 2rem;
+      padding: 2rem 1rem;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+
+    aside h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
     }
-    nav.breadcrumb {
-      background: #ecf0f1;
-      padding: 0.5rem 2rem;
-      font-size: 0.9rem;
+
+    aside ul {
+      list-style: none;
+      padding: 0;
     }
-    nav.breadcrumb a {
-      color: #2980b9;
+
+    aside ul li {
+      margin-bottom: 0.8rem;
+    }
+
+    aside ul li a {
+      color: #ecf0f1;
       text-decoration: none;
     }
-    nav.breadcrumb span {
-      margin: 0 0.5rem;
+
+    aside ul li a:hover {
+      text-decoration: underline;
     }
+
     main {
+      flex: 1;
       padding: 2rem;
+      background: white;
       max-width: 800px;
       margin: auto;
-      background: white;
     }
+
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
+
     section h2 {
       color: #2c3e50;
-      margin-bottom: 0.5rem;
+      margin-top: 0;
+      scroll-margin-top: 1.5rem;
     }
-    section p {
-      line-height: 1.6;
-    }
+
     .video-container {
       position: relative;
       padding-bottom: 56.25%;
@@ -56,6 +72,7 @@
       overflow: hidden;
       margin-top: 1rem;
     }
+
     .video-container iframe {
       position: absolute;
       top: 0;
@@ -63,54 +80,55 @@
       width: 100%;
       height: 100%;
     }
+
     footer {
-      background: #bdc3c7;
-      padding: 1rem 2rem;
+      padding: 2rem;
       text-align: center;
+      background: #bdc3c7;
       font-size: 0.8rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Chapter Title</h1>
-  </header>
-
-  <nav class="breadcrumb">
-    <a href="#">Home</a> <span>&gt;</span>
-    <a href="#">Academy</a> <span>&gt;</span>
-    <span>Chapter Title</span>
-  </nav>
+  <aside>
+    <h2>Contents</h2>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#video">Video Tutorial</a></li>
+      <li><a href="#concepts">Key Concepts</a></li>
+      <li><a href="#resources">Resources</a></li>
+    </ul>
+  </aside>
 
   <main>
-    <section>
+    <section id="intro">
       <h2>Introduction</h2>
-      <p>This is a brief introduction to the chapter. </p>
+      <p>This is a brief introduction to the chapter. Customize this text to describe the chapter’s purpose.</p>
     </section>
 
-    <section>
+    <section id="video">
       <h2>Video Tutorial</h2>
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
       </div>
     </section>
 
-    <section>
+    <section id="concepts">
       <h2>Key Concepts</h2>
-      <p>List and explain the key concepts covered in this chapter.</p>
+      <p>Explain the essential topics or techniques the user will learn in this chapter.</p>
     </section>
 
-    <section>
+    <section id="resources">
       <h2>Resources</h2>
       <ul>
-        <li><a href="#">Downloadable PDF Guide</a></li>
-        <li><a href="#">Additional Reading Material</a></li>
+        <li><a href="#">PDF Guide</a></li>
+        <li><a href="#">External Reading</a></li>
       </ul>
     </section>
-  </main>
 
-  <footer>
-    &copy; New Weird America
-  </footer>
+    <footer>
+      &copy; 2025 Your Organization Name. All rights reserved.
+    </footer>
+  </main>
 </body>
 </html>
