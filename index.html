@@ -8,103 +8,140 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f4f3f1;
-      color: #1c1c1c;
+      margin: 0;
+      padding: 0;
+      background: #f4f1ec;
+      color: #1e1e1e;
       line-height: 1.6;
+    }
+    header, main, section, footer {
       padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+      max-width: 960px;
+      margin: 0 auto;
     }
     h1, h2, h3 {
-      font-weight: 800;
       margin-top: 2rem;
+      font-weight: 800;
     }
     h1 {
       font-size: 2.5rem;
     }
     h2 {
-      font-size: 1.75rem;
-      margin-top: 1.5rem;
+      font-size: 2rem;
     }
     h3 {
-      font-size: 1.25rem;
-      margin-top: 1rem;
+      font-size: 1.5rem;
     }
-    p {
-      margin-bottom: 1rem;
+    p, li {
+      font-size: 1.1rem;
     }
     ul {
-      margin: 0;
-      padding-left: 1.5rem;
-    }
-    .highlight {
-      background-color: #e2e8f0;
-      padding: 0.5rem;
-      border-radius: 0.25rem;
+      padding-left: 1.2rem;
     }
     .cta {
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
     .cta a {
       display: inline-block;
       margin-right: 1rem;
-      padding: 0.75rem 1.25rem;
-      background: #1c1c1c;
-      color: white;
+      padding: 0.75rem 1.5rem;
+      background: #000;
+      color: #fff;
       text-decoration: none;
-      border-radius: 0.5rem;
+      border-radius: 5px;
       font-weight: 600;
     }
-    .cta a:hover {
-      background: #333;
+    .module {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .disclaimer {
+      background: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeeba;
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 2rem auto;
+      max-width: 960px;
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to New Weird America</h1>
-  <p><strong>A Platform for the Builders of the Next World</strong></p>
-  <p>We’re not here to patch the system. We’re here to replace it — from the dirt up, with real tools for real people building resilient communities.</p>
-  <p><em>New Weird America</em> is the beta launch of the <strong>Decentralized Community Network (DCN)</strong> — an open-source platform for homesteaders, off-gridders, rebels, and revivalists who are done waiting for permission. It’s part of our <strong>Community Co-op Initiative</strong>, and it’s for those who believe that freedom starts with local control, shared knowledge, and mutual support.</p>
-  <p>This is infrastructure for the weirdos, the builders, the dreamers, and the doers. And it’s just getting started.</p>
-
-  <h2>What’s Inside the Toolkit</h2>
-  <p>We’re not trying to recreate Facebook. We’re building something useful. These tools are modular, federated, and designed to grow with your community.</p>
-
-  <h3>🏡 Communities</h3>
-  <p>Start or join a node — physical or digital. Define roles, supported trades, bylaws, and connect with other nodes by region, purpose, or vibe. From a Discord server to a 40-acre farm, you belong here.</p>
-
-  <h3>🗺️ Map</h3>
-  <p>Visualize the growing web of nodes, routes, travelers, events, and community zones — defined not by borders, but by values. Filter, zoom, and explore the living network.</p>
-
-  <h3>📚 Courses</h3>
-  <p>Publish or join hands-on lessons: from seed saving to server setup. Learn collaboratively with Learning Circles, fork and remix content, and use it offline.</p>
-
-  <h3>💬 Forum</h3>
-  <p>Structured threads with lifecycle states: open, resolved, archived. Collaborate on problems, propose solutions, and log experiments. Less scrolling, more solving.</p>
-
-  <h3>📅 Events</h3>
-  <p>Find and host workshops, festivals, cleanups, and actions. Integrated with maps and calendars, this helps bring the digital into the dirt.</p>
-
-  <h3>♻️ Exchange</h3>
-  <p>Trade goods, services, and surplus. Local or remote. Cash or barter. Tag your goods by method (wildcrafted, solar-forged, etc.) and build a profile you control.</p>
-
-  <h3>🧠 Library / Knowledge Base</h3>
-  <p>Community-curated permaculture notes, bylaws, land use patterns, DIYs, tool manuals, and blueprints. Git-backed and markdown-friendly.</p>
-
-  <h3>👤 Profiles & Badging</h3>
-  <p>Show your trades, skills, and projects. Earn recognition by participation. Build reputation without hierarchy.</p>
-
-  <h3>🛰️ Messenger / Signals</h3>
-  <p>Low-bandwidth peer-to-peer communications. Matrix and Nostr compatible. Use basic mode when offline, traveling, or deep in the woods.</p>
-
-  <h2>This is a Beta. You Are the Testers.</h2>
-  <p>We’ve built the bones — now we need the people who know what these tools are for. Come help us build a platform that serves, supports, and grows with real community.</p>
-
-  <div class="cta">
-    <a href="#">🌱 Sign Up for the Beta</a>
-    <a href="#">🛠️ Explore the Docs</a>
-    <a href="#">💻 Visit the GitHub</a>
-    <a href="#">🤝 Join the Community</a>
+  <header>
+    <h1>New Weird America</h1>
+    <p><strong>A Platform for the Builders of the Next World</strong></p>
+    <p>We’re not here to patch the system. We’re here to replace it — from the dirt up, with real tools for real people building resilient communities.</p>
+    <p><em>New Weird America</em> is the beta launch of the <strong>Decentralized Community Network (DCN)</strong> — an open-source platform for homesteaders, off-gridders, rebels, and revivalists who are done waiting for permission.</p>
+  </header>
+  
+  <div class="disclaimer">
+    <strong>Disclaimer:</strong> This is a beta prototype. Content and features may change, break, or disappear at any time. Your feedback and participation shape this project.
   </div>
+
+  <main>
+    <h2>What’s Inside the Toolkit</h2>
+
+    <section class="module">
+      <h3>🏡 Communities</h3>
+      <p>Create or join a node — whether a cabin in the woods or a digital guild. Establish your place in the network, define your trade or mission, write your bylaws, and connect with others through a federation of like-minded hubs.</p>
+    </section>
+
+    <section class="module">
+      <h3>🗺️ Map</h3>
+      <p>An interactive and evolving atlas of active communities, trade routes, local currencies, and bioregional zones. Discover real-world and digital activity clusters shaped by values, not governments. Watch the movement unfold geographically and socially.</p>
+    </section>
+
+    <section class="module">
+      <h3>📚 Courses</h3>
+      <p>Participate in peer-led, decentralized education — from ancient skills to digital infrastructure. Launch or join modular courses, remix lessons, and collaborate through Learning Circles designed to empower and proliferate community knowledge.</p>
+    </section>
+
+    <section class="module">
+      <h3>💬 Forum</h3>
+      <p>A living commons for research, storytelling, coordination, and knowledge exchange. Threads evolve over time, archive into the Knowledge Base, and serve as a space for proposals, experiments, and dialogue across nodes.</p>
+    </section>
+
+    <section class="module">
+      <h3>📅 Events</h3>
+      <p>Host or attend seasonal festivals, barn raisings, work parties, skill shares, and regional meetups. Events sync to the map, support offline modes, and are designed for asynchronous planning across time zones and connectivity levels.</p>
+    </section>
+
+    <section class="module">
+      <h3>♻️ Exchange</h3>
+      <p>A decentralized trade network that supports barter, gifting, and mutual credit. Browse goods and services by method of production, ethical tags, bioregion, or exchange preferences. Build local economies that value transparency and reciprocity.</p>
+    </section>
+
+    <section class="module">
+      <h3>🧠 Library / Knowledge Base</h3>
+      <p>A living, versioned archive of community-generated content — including blueprints, bylaws, technical documentation, zines, and oral histories. All entries are citation-ready, forkable, and built for long-term preservation and interoperability.</p>
+    </section>
+
+    <section class="module">
+      <h3>👤 Profiles & Badging</h3>
+      <p>Every member gets a dynamic profile that tracks contributions, skills, trades, and participation. Earn badges for work, mentorship, governance, and stewardship. Use profiles to find collaborators or showcase your journey across the network.</p>
+    </section>
+
+    <section class="module">
+      <h3>🛰️ Messenger / Signals</h3>
+      <p>Resilient messaging tools for synchronous and asynchronous communication. Supports Matrix and Nostr protocols, with fallback to low-bandwidth peer-to-peer signals. Designed for autonomy, redundancy, and life beyond the grid.</p>
+    </section>
+
+    <section>
+      <h2>This is a Beta. You Are the Testers.</h2>
+      <p>This isn’t a finished product. It’s a <strong>community forge</strong>. Help us shape it.</p>
+    </section>
+
+    <section class="cta">
+      <h3>Ready to Get Involved?</h3>
+      <a href="#">🌱 Sign Up for the Beta</a>
+      <a href="#">🛠️ Explore the Docs</a>
+      <a href="#">💻 Visit the GitHub</a>
+      <a href="#">🤝 Join the Community</a>
+    </section>
+  </main>
 </body>
 </html>
